@@ -77,14 +77,15 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var $expl = $content.find(".explanation");
 
+            for (var i = 0; i < explanation.length; i++) {
+                var $span = $("<span></span>").text(explanation[i]);
+                if (explanation[i] === "1") {
+                    $span.addClass("unity");
+                }
+                $expl.append($span);
+            }
 
             this_e.setAnimationHeight($content.height() + 60);
 
