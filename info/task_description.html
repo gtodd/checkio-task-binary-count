@@ -3,24 +3,25 @@
 
 
 <p>
-    For the Robots the decimal format is not convenient.
-    And if they asked to count "1" in a number, then they want to count it in the binary representation of the number.
+    For the Robots the decimal format is inconvenient. If they need to count to "1",
+    their computer brains want to count it in the binary representation of that number.
     You can read more about binary <a href="http://en.wikipedia.org/wiki/Binary_number">here</a>.
 </p>
 
 <p>
-    You are given a number (a positive integer). You should convert it to the binary format and count how many unities in it.
+    You are given a number (a positive integer).
+    You should convert it to the binary format and count how many unities (1) are in it.
 </p>
 
 
 <p>
     <strong>Hints: </strong> This task can be easily solved with two functions --
     {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/library/functions.html#bin">bin</a> and
+    <a href="http://docs.python.org/2/library/functions.html#bin">bin </a> and
     <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>.
 
     {% else %}
-    <a href="http://docs.python.org/3/library/functions.html#bin">bin</a> and
+    <a href="http://docs.python.org/3/library/functions.html#bin">bin </a> and
     <a href="http://docs.python.org/3/library/stdtypes.html#str.count">count</a>.
     {% endif %}
 </p>
@@ -49,5 +50,5 @@ checkio(1022) == 9
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    How to convert a number in the binary form. It can be useful for Computer Science ;-)
+    How to convert a number to the binary form. It can be useful for Computer Science purposes.
 </p>
