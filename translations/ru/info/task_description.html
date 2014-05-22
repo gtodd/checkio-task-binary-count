@@ -1,0 +1,71 @@
+<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
+     style="width: 295px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    Для Роботов десятичная форма чисел неудобна.
+    Если вы попросите сосчитать сколько единиц (1) в числе,
+    то их компьютерные мозги будут пытатся считать в двоичном представлении.
+    Узнать больше о двоичных числах можно <a href="http://en.wikipedia.org/wiki/Binary_number">здесь</a>.
+</p>
+
+<p>
+    Дано положительное целое число.
+    Вам необходимо сконвертировать его в двоичную форму и подсчитать сколько единиц в написании данного числа.
+
+    Для примера: 5 = 0b101 содержит две единицы, так что ответ 2.
+</p>
+
+
+<p>
+    <strong>Заметки: </strong> Эта задача легко решается с помощью двух функций" --
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/functions.html#bin">bin </a> и
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>.
+
+    {% else %}
+    <a href="http://docs.python.org/3/library/functions.html#bin">bin </a> и
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.count">count</a>.
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>Вх. данные: </strong> Число как положительное целочисленое (int).
+</p>
+
+<p>
+    <strong>Вых. данные: </strong> Число единиц в двоичной форме данного числа (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Здесь вы попрактикуетесь как конвертировать число в двоичную форму. Это очень полезный навых в области вычислительной техники.
+</p>
+
+
+<p>
+    <strong>Предусловия: </strong>
+    0 &lt; number &le; 2<sup>32</sup>
+
+</p>
+<div class="facts for_info_only">
+    <p>
+
+        Гвидо ван Россум (нидерл. Guido van Rossum), автор Python, один из наших самых знаменитых игроков.
+        Иногда он пише замечательные обзоры кода для решений наших пользователей.
+    </p>
+</div>

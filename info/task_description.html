@@ -10,12 +10,13 @@
 
 <p>
     You are given a number (a positive integer).
-    You should convert it to the binary format and count how many unities (1) are in it.
+    You should convert it to the binary format and count how many unities (1) are in the number spelling.
+    For example: 5 = 0b101 contains two unities, so the answer is 2.
 </p>
 
 
 <p>
-    <strong>Hints: </strong> This task can be easily solved with two functions --
+    <strong>Tips: </strong> This task can be easily solved with two functions --
     {% if "python 2" in interpreter|lower %}
     <a href="http://docs.python.org/2/library/functions.html#bin">bin </a> and
     <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>.
@@ -32,7 +33,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong> The quantity of unities in the binary form, an integer.
+    <strong>Output: </strong> The quantity of unities in the binary form as an integer.
 </p>
 
 
@@ -54,6 +55,11 @@ checkio(1022) == 9
 </p>
 
 
+<p>
+    <strong>Precondition: </strong>
+    0 &lt; number &le; 2<sup>32</sup>
+
+</p>
 <div class="facts for_info_only">
     <p>
         Guido van Rossum, the author of Python, is one of our most famous player. He is writing some really wonderful
