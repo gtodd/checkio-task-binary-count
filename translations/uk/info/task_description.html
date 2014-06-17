@@ -1,0 +1,72 @@
+<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
+     style="width: 295px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    Для Роботів десяткова форма чисел незручна. Якщо ви попросите порахувати скільки 
+    одиниць (1) в числі, то їх комп'ютерні мізки будуть робити спробу обчислювати їх 
+    в двійковому поданні. Дізнатися більше про двійкову систему числення можна  
+    <a href="http://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F">
+    тут</a>.
+</p>
+
+<p>
+    Задане позитивне ціле число. Вам необхідно перетворити його в двійкову форму, і 
+    підрахувати скільки одиниць в написанні даного числа. <br> Наприклад: 5 = 0b101 
+    містить дві одиниці, так що відповідь 2.
+</p>
+
+
+<p>
+    <strong>Зауваження: </strong> Ця задача легко розв’язуються за допомогою двох функцій" --
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/functions.html#bin">bin</a> и
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>.
+
+    {% else %}
+    <a href="http://docs.python.org/3/library/functions.html#bin">bin</a> и
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.count">count</a>.
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>Вхідні дані: </strong> Число як позитивне ціле число (int).
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> Число одиниць в двійковій формі даного числа (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    Тут ви попрактикуєтесь як конвертувати число в двійкову форму. 
+    Це дуже корисний навичок в галузі обчислювальної техніки.
+</p>
+
+
+<p>
+    <strong>Передумови: </strong><br>
+    0 &lt; number &le; 2<sup>32</sup>
+
+</p>
+<div class="facts for_info_only">
+    <p>
+
+        Ґві́до ван Ро́ссум (нід. Guido van Rossum), автор Python, один з наших найбіль
+        ш знаменитих гравців. Іноді він пише чудові огляди коду до розв’язків наших користувачів.
+    </p>
+</div>
