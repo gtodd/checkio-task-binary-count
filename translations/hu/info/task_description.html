@@ -1,0 +1,76 @@
+<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
+     style="width: 295px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    A Robotok számára a decimális számrendszer kényelmetlen. Ha arra kérnénk őket, 
+    hogy számolják meg az egyesek (1) számát egy számban, akkor a ők számítógépes 
+    agyuk bináris formában akarná majd elvégezni a megszámlálást. Bővebb információt 
+    a bináris számokról <a href="http://hu.wikipedia.org/wiki/Kettes_sz%C3%A1mrendszer">itt</a> 
+    kaphatunk.
+</p>
+
+<p>
+    Adott egy pozitív egész szám.
+    Önnek át kell alakítani ezt a számot egy bináris számmá és megszámolni, hogy 
+    hány egyes található e bináris ábrázolásban.<br>
+
+    Például: az 5 = 0b101 két egyest tartalmaz, ezért a felelet az 2.
+</p>
+
+
+<p>
+    <strong>Megjegyzés: </strong> ez a feladat könnyen megoldható két függvénnyel, - 
+    {% if "python 2" in interpreter|lower %}
+    a <a href="http://docs.python.org/2/library/functions.html#bin">bin</a> és
+    a <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>- 
+    segítségével.
+
+    {% else %}
+    a <a href="http://docs.python.org/3/library/functions.html#bin">bin</a> és
+    a <a href="http://docs.python.org/3/library/stdtypes.html#str.count">count</a>- 
+    segítségével.
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>Bemeneti adatok: </strong> egy pozitív egész szám (int).
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> az egyesek száma a megadott szám bináris 
+    ábrázolásában egész számként (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Ennek a feladtak segítségével gyakorolni lehet a bináris számmá való átalakítást. 
+    Ez egy nagyon hasznos készség a számítástechnikában.
+</p>
+
+
+<p>
+    <strong>Előfeltételek: </strong>
+    0 &lt; number &le; 2<sup>32</sup>
+
+</p>
+<div class="facts for_info_only">
+    <p>
+        Guido van Rossum, a Python szülőatyja, a leghíresebb játékosaink egyike. 
+        Olykor kitűnő véleményezéseket szokott írni a felhasználóink forráskódjaihoz.
+    </p>
+</div>
