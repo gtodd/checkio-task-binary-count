@@ -1,0 +1,68 @@
+﻿<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
+     style="width: 295px;float: left; margin-top: 10px; "/>
+
+
+<p>
+	ロボットにとって10進数は不便です。
+	彼らが"1"を数える必要があるとき、彼らのコンピュータ脳はその数の2進表現で1を数えたいです。
+	2進数について詳しくは<a href="http://en.wikipedia.org/wiki/Binary_number">ここ</a>で読むことができます(訳注:<a href="http://ja.wikipedia.org/wiki/%E4%BA%8C%E9%80%B2%E6%B3%95">日本語版</a>)。
+</p>
+
+<p>
+	あなたにはある数が与えられます(正の整数)。
+	あなたはこれを2進表現に変換して、数の表記の中に1がいくつあるか数えてください。
+	例えば: 5 = 0b101は2つの1を含んでいます。したがって答えは2です。
+</p>
+
+
+<p>
+    <strong>ヒント(Tips): </strong>このタスクは2つの関数を使って簡単に解くことができます --
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.jp/2/library/functions.html#bin">bin</a>と
+    <a href="http://docs.python.jp/2/library/stdtypes.html#str.count">count</a>。
+
+    {% else %}
+    <a href="http://docs.python.jp/3/library/functions.html#bin">bin</a>と
+    <a href="http://docs.python.jp/3/library/stdtypes.html#str.count">count</a>。
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>入力: </strong> ある数、正の整数。
+</p>
+
+<p>
+    <strong>出力: </strong> 2進形式の1の個数、整数。
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+	数を2進数に変換する方法を学びます。コンピュータサイエンスの目的で役に立ちます。
+</p>
+
+
+<p>
+    <strong>事前条件: </strong>
+    0 &lt; number &le; 2<sup>32</sup>
+
+</p>
+<div class="facts for_info_only">
+    <p>
+		Pythonの作者であるGuido van Rossumは最も有名なプレイヤーの一人です。
+		彼はいくつかの他のプレイヤーの解答に対して実に素晴らしいコードレビューを書いています。
+    </p>
+</div>
