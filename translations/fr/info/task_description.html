@@ -1,0 +1,68 @@
+<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
+     style="width: 295px;float: left; margin-top: 10px; "/>
+
+
+<p>
+    Pour les Robots, le format d&eacute;cimal est emb&ecirc;tant. S'ils ont besoin de compter "1",
+    leur cerveau &eacute;lectronique veut le compter en utilisant la repr&eacute;sentation binaire de ce nombre.
+    Vous pouvez en lire plus sur le syst&egrave;me binaire <a href="http://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire">ici</a>.
+</p>
+
+<p>
+    On vous donne un nombre (un entier positif).
+    Vous devez le convertir en format binaire et compter combien d'unit&eacute;s (1) sont dans la repr&eacute;sentation du nombre.
+    Par exemple : 5 = 0b101 contient deux unit&eacute;s, donc la r&eacute;ponse est 2.
+</p>
+
+
+<p>
+    <strong>Conseils : </strong> Cette t&acirc;che peut &ecirc;tre facilement r&eacute;solue avec deux fonctions --
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/functions.html#bin">bin</a> et
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.count">count</a>.
+
+    {% else %}
+    <a href="http://docs.python.org/3/library/functions.html#bin">bin</a> et
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.count">count</a>.
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>Entr&eacute;e : </strong> Un nombre en tant qu'entier positif.
+</p>
+
+<p>
+    <strong>Sortie : </strong> La quantit&eacute; d'unit&eacute;s contenue dans la repr&eacute;sentation binaire du nombre, en tant qu'entier.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple : </strong>
+    </p>
+    <pre class="brush: python">
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Comment convertir un nombre en format binaire. Cela peut &ecirc;tre utile pour une utilisation en informatique.
+</p>
+
+
+<p>
+    <strong>Pr&eacute;condition : </strong>
+    0 &lt; nombre &le; 2<sup>32</sup>
+
+</p>
+<div class="facts for_info_only">
+    <p>
+        Guido van Rossum, l'auteur du Python, est un de nos joueurs les plus connus.
+        Il &eacute;crit de magnifiques revues de code pour les solutions de nos joueurs.
+    </p>
+</div>
