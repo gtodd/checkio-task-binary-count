@@ -16,7 +16,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
 
             },
             tryit: function (this_e) {
-                $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
+                $tryit = $(this_e.extSetHtmlTryIt(this_e.getTemplate('tryit'))).find('.tryit-content');
                 $tryit.find('.bn-check').click(function (e) {
                     e.preventDefault();
                     var $input = $tryit.find(".tool .input-number");
@@ -24,7 +24,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                     if (!isNaN(data)) {
                         data = Number(data);
                     }
-                    this_e.sendToConsoleCheckiO(data);
+                    this_e.extSendToConsoleCheckiO(r);
                     e.stopPropagation();
                     return false;
                 });
