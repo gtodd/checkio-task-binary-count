@@ -41,19 +41,17 @@
     <p>
         <strong>例:</strong>
     </p>
-    <pre class="brush: python">
-        {% if interpreter.slug == "js-node" %}
-            binaryCount(4) == 1
-            binaryCount(15) == 4
-            binaryCount(1) == 1
-            binaryCount(1022) == 9
-        {% else %}
-            checkio(4) == 1
-            checkio(15) == 4
-            checkio(1) == 1
-            checkio(1022) == 9
-        {% endif %}
-    </pre>
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+binaryCount(4) == 1
+binaryCount(15) == 4
+binaryCount(1) == 1
+binaryCount(1022) == 9
+{% else %}
+checkio(4) == 1
+checkio(15) == 4
+checkio(1) == 1
+checkio(1022) == 9
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only">
