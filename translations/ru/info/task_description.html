@@ -1,6 +1,6 @@
-<img class="for_info_only" title="abacus" src="{{MEDIA}}abacus.png" alt="abacus"
-     style="width: 295px;float: left; margin-top: 10px; "/>
-
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}abacus.png" alt="abacus" style="max-height: 450px">
+</div>
 
 <p>
     Для Роботов десятичная форма чисел неудобна.
@@ -44,10 +44,17 @@
         <strong>Примеры:</strong>
     </p>
     <pre class="brush: python">
-checkio(4) == 1
-checkio(15) == 4
-checkio(1) == 1
-checkio(1022) == 9
+        {% if interpreter.slug == "js-node" %}
+            binaryCount(4) == 1
+            binaryCount(15) == 4
+            binaryCount(1) == 1
+            binaryCount(1022) == 9
+        {% else %}
+            checkio(4) == 1
+            checkio(15) == 4
+            checkio(1) == 1
+            checkio(1022) == 9
+        {% endif %}
     </pre>
 </div>
 
