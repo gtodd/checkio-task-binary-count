@@ -38,7 +38,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
             },
             retConsole: function (ret) {
                 $tryit.find(".checkio-result").html("Your Result<br>" + ret);
-            }
+            },
 
             functions: {
                 js: 'binaryCount',
