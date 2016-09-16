@@ -24,7 +24,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                     if (!isNaN(data)) {
                         data = Number(data);
                     }
-                    this_e.extSendToConsoleCheckiO(r);
+                    this_e.extSendToConsoleCheckiO(data);
                     e.stopPropagation();
                     return false;
                 });
