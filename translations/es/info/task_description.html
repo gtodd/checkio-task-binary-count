@@ -1,4 +1,6 @@
-<p><img alt="abacus" class="for_info_only" src="{{MEDIA}}abacus.png" style="width: 295px;float: left; margin-top: 10px; " title="abacus" /></p>
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}abacus.png" alt="abacus" style="max-height: 450px">
+</div>
 
 <p>Para los robots el formato decimal es inconveniente. Si necesitan contar hasta &quot;1&quot; Sus cerebros inform&aacute;ticos quieren hacerlo con la representaci&oacute;n binaria de este n&uacute;mero. Puedes leer m&aacute;s sobre n&uacute;meros binarios <a href="http://en.wikipedia.org/wiki/Binary_number">aqu&iacute;</a>.</p>
 
@@ -9,13 +11,19 @@
 <p><strong>Salida: </strong> La cantidad de unidades (1) de la representaci&oacute;n binaria, como un entero (int).</p>
 
 <div class="for_info_only">
-<p><strong>Ejemplo:</strong></p>
-
-<pre class="brush: python">
-checkio(4) == 1
-checkio(15) == 4
-checkio(1) == 1
-checkio(1022) == 9
+    <p><strong>Ejemplo:</strong></p>
+    <pre class="brush: python">
+        {% if interpreter.slug == "js-node" %}
+            binaryCount(4) == 1
+            binaryCount(15) == 4
+            binaryCount(1) == 1
+            binaryCount(1022) == 9
+        {% else %}
+            checkio(4) == 1
+            checkio(15) == 4
+            checkio(1) == 1
+            checkio(1022) == 9
+        {% endif %}
     </pre>
 </div>
 
