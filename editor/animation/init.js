@@ -5,11 +5,6 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
         var io = new extIO({
 
             animation: function($expl, data){
-                var checkioInput = data.in;
-                if (!checkioInput){
-                    return;
-                }
-
                 var explanation = data.ext["explanation"]
                 for (var i = 0; i < explanation.length; i++) {
                     var $span = $("<span></span>").text(explanation[i]);

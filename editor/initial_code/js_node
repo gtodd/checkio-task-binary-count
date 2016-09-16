@@ -7,9 +7,9 @@ function binaryCount(number){
 var assert = require('assert');
 
 if (!global.is_checking) {
-    assert.deepEqual(binaryCount(4), 1);
-    assert.deepEqual(binaryCount(15), 4)]);
-    assert.deepEqual(binaryCount(1), 1);
-    assert.deepEqual(binaryCount(1022), 9);
+    assert.equal(binaryCount(4), 1);
+    assert.equal(binaryCount(15), 4)]);
+    assert.equal(binaryCount(1), 1);
+    assert.equal(binaryCount(1022), 9);
     console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
 }
